@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #16161a;
+      display: flex;
+      justify-content: center;
+    }
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      border: #18bf4a;
+      display: flex;
+     justify-content: center;
+    }
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .name {
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      color: #7f5af0;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link {
+      background-color: #94a1b2;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .link a {
+      color: #fffffe;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      align-items: center;
+      flex-grow: 1;
+    }
+ </style>
 <head>
   <meta charset="UTF-8">
   <title>My link in bio</title>
 </head>
 <body>
+<div class="items">  
   <div class="banner">
-    <img src="profile_pic.jpg" alt="Ziyu Ren headshot">
+    <img src="profile_pic.jpg" alt="Ziyu Ren headshot" class="banner-image">
   </div>
 
   <div class="name">
@@ -33,13 +93,13 @@
 
   <div class="link">
     <img
-      src="esfj.png" alt="ESFJ is my personality type">
+      src="esfj.png" alt="ESFJ is my personality type" class="thumbnail">
 
     <a target="_blank" href="https://www.16personalities.com/esfj-personality">My Personality Type: ESFJ</a>
   </div>
 
   <div class="link">
-    <img src="jinan.jpg" alt="I am from Jinan">
+    <img src="jinan.jpg" alt="I am from Jinan" class="thumbnail">
 
     <a target="_blank"
       href="https://en.wikipedia.org/wiki/Jinan">City I am from: Jinan, China</a>
@@ -49,10 +109,13 @@
     <img
       src="https://biocars.uchicago.edu/wp-content/uploads/2019/05/cropped-logo.png"
       alt="I go to UChicago"
+      class="thumbnail"
       >
 
     <a target="_blank" href="https://www.uchicago.edu/en">My Undergrad Institution: UChicago</a>
   </div>
 
   <!-- Etc, for as many links as you want -->
+</div>
 </body>
+</html>
